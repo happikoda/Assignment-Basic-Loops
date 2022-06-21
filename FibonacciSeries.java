@@ -7,10 +7,6 @@ public class FibonacciSeries
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the number of terms upto which fibonacci series will print : ");
         terms=sc.nextInt();
-        if(terms==0)
-        {
-          System.out.println("");
-        }
         while(i<=terms)
         {
           System.out.print(prev+" ");
@@ -18,7 +14,6 @@ public class FibonacciSeries
           prev=next;
           next=temp+prev;
           i++;
-
         }
         System.out.println();
   }
